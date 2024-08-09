@@ -21,17 +21,20 @@ This repository contains an application built using the FastAI library for detec
 # Usage
 ### Prerequisites
 Make sure you have the following installed:
+
 ```python
 pip install fastai opencv-python torch websockets
 ```
 ### Running the Application
 1. Clone the Repository:
+2. 
 ```python
 git clone https://github.com/your-repository-url.git
 cd your-repository-directory
 ```
 2. Run the Application:
 Open the app.ipynb notebook in Jupyter and run all cells to start the application. Alternatively, convert the notebook to a Python script and run it directly:
+
 ```python
 jupyter nbconvert --to script app.ipynb
 python app.py
