@@ -21,18 +21,18 @@ This repository contains an application built using the FastAI library for detec
 # Usage
 ### Prerequisites
 Make sure you have the following installed:
-```
+```python
 pip install fastai opencv-python torch websockets
 ```
 ### Running the Application
 1. Clone the Repository:
-```
+```python
 git clone https://github.com/your-repository-url.git
 cd your-repository-directory
 ```
 2. Run the Application:
 Open the app.ipynb notebook in Jupyter and run all cells to start the application. Alternatively, convert the notebook to a Python script and run it directly:
-```
+```python
 jupyter nbconvert --to script app.ipynb
 python app.py
 ```
@@ -42,7 +42,7 @@ Ensure that the WebSocket server address is correctly configured in the send_eve
 # Code Overview
 1. Stop Sign Detection Model
 This model is trained to detect the 3.27 'No Stopping' traffic sign using FastAI.
-```
+```python
 from fastai.vision.all import *
 
 # Path to your dataset
@@ -72,7 +72,7 @@ learn.export('stop_sign_model.pkl')
 ```
 2. Vehicle Detection Model
 This model is trained to detect cars, buses, and trucks.
-```
+```python
 from fastai.vision.all import *
 
 # Path to your dataset
@@ -113,7 +113,7 @@ learn.export('vehicle-model.pkl')
 3. Real-Time Detection and WebSocket Integration
 The following code integrates the stop sign and vehicle detection models with real-time video analysis and sends an event if the conditions are met.
 
-```
+```python
 import cv2
 import torch
 from fastai.vision.all import *
